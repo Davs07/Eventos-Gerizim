@@ -160,7 +160,7 @@ li:hover {
   color: #ffffff;
   background: #1d1d1d;
   border-radius: 25px;
-  width: 314px;
+  width: 300px;
   text-align: center;
   padding: 5px 15px;
   font-size: 30px;
@@ -217,8 +217,8 @@ li:hover {
   border-radius: 7px;
   margin-left: 30px;
 }
-#nosotros .social-media i:hover{
-    background: #ffffff;
+#nosotros .social-media i:hover {
+  background: #ffffff;
 }
 
 footer {
@@ -276,13 +276,24 @@ footer {
 
 @media (max-width: 520px) {
   #inicio .dos div {
-    width: 300px;
+    width: 320px;
+  }
+
+  #inicio h2 {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+  }
+  #inicio .dos h4 {
+    font-size: 26px;
+    font-weight: 400;
   }
   #servicios .sect .box {
-    width: 300px;
+    width: 320px;
   }
   #nosotros div {
-    width: 300px;
+    width: 320px;
   }
   #nosotros h4 {
     font-size: 26px;
