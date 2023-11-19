@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #1d1d1d;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Outfit", sans-serif;
+  gap: 60px;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  background: #fcd10d;
+}
+.logo {
+  position: absolute;
+  padding: 10px 50px;
+}
+.logo :is(h2, h1) {
+  color: #000000;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline;
+  line-height: 80px;
+
+  padding: 7px 12px;
+  border-radius: 25px;
+}
+
+nav ul li a {
+  color: #000;
+  margin: 0 50px;
+  width: 115px;
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 100%;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+li:hover {
+  background: #ffffff;
+}
+.check-btn {
+  font-size: 30px;
+  color: #000000;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 80vh; /*  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  color: #ffffff;
+  gap: 60px;
+}
+.sect {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+.box {
+  border-radius: 25px;
+}
+#inicio .sect div {
+  padding-bottom: 60px;
+}
+#inicio h2 {
+  font-size: 46px;
+  text-transform: uppercase;
+
+  line-height: 60px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+#inicio h2 span {
+  color: #fcd10d;
+}
+#inicio .dos div {
+  width: 500px;
+}
+#inicio .dos h4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.image1-1 {
+  width: 600px;
+}
+.image1-2 {
+  width: 500px;
+}
+#servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#servicios h4 {
+  font-size: 42px;
+}
+#servicios h4 span {
+  color: #fcd10d;
+}
+#servicios h5 {
+  font-size: 32px;
+}
+
+#servicios div {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+#servicios .sect .box {
+  width: 500px;
+  color: #1d1d1d;
+  background: #fcd10d;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+#servicios .sect .box h4 {
+  text-align: start;
+}
+#servicios .sect .box ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+#servicios .sect .box ul li {
+  color: #ffffff;
+  background: #1d1d1d;
+  border-radius: 25px;
+  width: 314px;
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 30px;
+}
+
+#servicios .sect .box ul li span {
+  font-size: 40px;
+}
+#servicios .sect .box img {
+  height: 40px;
+  filter: invert(100%);
+}
+
+#nosotros {
+  display: flex;
+  flex-direction: column;
+}
+#nosotros div {
+  width: 800px;
+  padding-bottom: 40px;
+}
+#nosotros h4 {
+  font-size: 34px;
+  line-height: 40px;
+  word-spacing: 4px;
+}
+#nosotros .box {
+  background: #fcd10d;
+  color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+#nosotros .box h5 {
+  font-size: 36px;
+}
+#nosotros .box p {
+  font-size: 30px;
+  padding-top: 20px;
+}
+#nosotros .social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+#nosotros .social-media h2 {
+  color: #fcd10d;
+}
+#nosotros .social-media i {
+  font-size: 30px;
+  color: #1d1d1d;
+  background: #fcd10d;
+  border-radius: 7px;
+  margin-left: 30px;
+}
+#nosotros .social-media i:hover{
+    background: #ffffff;
+}
+
+footer {
+  color: #ffffff;
+}
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+  #servicios div {
+    flex-direction: column;
+  }
+  #nosotros div {
+    width: 400px;
+  }
+}
+@media (max-width: 1000px) {
+  .logo {
+    padding-left: 20px;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .check-btn {
+    display: block;
+  }
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    display: none;
+    background: #fcd10d;
+    text-align: center;
+    z-index: 999;
+  }
+  nav ul li {
+    display: block;
+    margin: 15px 0;
+    line-height: 30px;
+    width: 100%;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    display: initial;
+  }
+}
+
+@media (max-width: 520px) {
+  #inicio .dos div {
+    width: 300px;
+  }
+  #servicios .sect .box {
+    width: 300px;
+  }
+  #nosotros div {
+    width: 300px;
+  }
+  #nosotros h4 {
+    font-size: 26px;
+    line-height: 32px;
+    word-spacing: 2px;
+  }
+
+  .image1-1 {
+    width: 300px;
+  }
+  .image1-2 {
+    width: 250px;
+  }
+}
